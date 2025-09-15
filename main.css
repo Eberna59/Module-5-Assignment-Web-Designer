@@ -1,0 +1,64 @@
+/* main.css - external CSS applied site-wide */
+
+/* body selector with background-color (required) */
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #faf7f5;
+  color: #222;
+  line-height: 1.5;
+}
+
+/* header / brand */
+.brand {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:14px 20px;
+  border-bottom:1px solid #eee;
+}
+.logo { width:110px; height:auto; }
+
+/* multiple selectors example */
+h1, h2, h3 {
+  font-weight:600;
+  margin:8px 0;
+  color:#111;
+}
+
+/* nav */
+.nav-list { list-style:none; margin:0; padding:0; display:flex; gap:12px; }
+.nav-list a { color:#111; text-decoration:none; padding:6px 8px; border-radius:4px; }
+.nav-list a:hover { background:#f0e7e5; }
+
+/* active link via class */
+.nav-list .active { background:#111; color:#fff; }
+
+/* hero */
+.hero { display:flex; gap:18px; align-items:center; padding:20px; max-width:1100px; margin:20px auto; }
+.hero-img { width:420px; max-width:45%; border-radius:8px; }
+
+/* class selector example */
+.feature-card { display:flex; gap:12px; align-items:center; background:#fff; padding:12px; border:1px solid #eee; border-radius:8px; }
+
+/* id selector example */
+#brand-name { letter-spacing:2px; font-size:1.5rem; }
+
+/* sub-element selector: targets links inside paragraphs */
+p a { color:#111; text-decoration:underline; }
+
+/* main layout */
+main { max-width:1000px; margin:0 auto; padding:18px; display:block; }
+
+/* small thumbnails */
+.thumb { width:72px; height:auto; border-radius:6px; }
+
+/* footer */
+footer { text-align:center; padding:16px 8px; border-top:1px solid #eee; margin-top:28px; color:#666; }
+
+/* responsive */
+@media (max-width:700px) {
+  .hero { flex-direction:column; }
+  .nav-list { flex-wrap:wrap; gap:8px; }
+}
